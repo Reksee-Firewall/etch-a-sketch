@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="path_to_your_favicon.ico">
+    <title>Etch A Sketch</title>
+</head>
+
+<body>
+    <div id="viewport">
+        <header>
+            <h1>ETCH-A-SKETCH</h1>
+            <p id="github">by reksee-firewall</p>
+        </header>
+        <section id="painting"> 
+            <div id="paintingBoard">
+                <img id="sketchPage" src="assets/paper-background.png" alt="A white background.">
+            </div>
+        </section>
+        <div id="colorWheelContainer" class="hidden">
+            <div id="colorWheel">
+            </div>
+            <div id="selectedColor"></div>
+        </div>
+        <aside id="toolsPanel">
+            <div id="icons">
+                <ul>
+                    <li><img id="iconOne" src="assets/paint-bucket.png" alt="A paint bucket."></li>
+                    <li><img id="iconTwo" src="assets/paint-brush.png" alt="A paint brush."></li>
+                    <li><img id="iconThree" src="assets/eraser.png" alt="An eraser."></li>
+                </ul>
+                <button id="bttn">
+                    <div id="scroller"></div>
+                </button>
+                <ul>
+                    <li><img id="iconFour" src="assets/white-roller-alt.png" alt="A white painting roller."></li>
+                    <li><img id="iconFive" src="assets/black-roller-alt.png" alt="A black painting roller."></li>
+                    <li><img id="iconSix" src="assets/color-wheel-alt.png" alt="A color wheel."></li>
+                </ul>
+            </div>
+            <div id="selectedIcon" class="selectSecond"></div>
+        </aside>
+        <footer></footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
