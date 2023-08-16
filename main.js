@@ -72,6 +72,8 @@ function handleResize() {
     adjustGridSize();
 }
 
+let chunkElements = document.querySelectorAll(".gridChunk");
+let chunkArray = [...chunkElements];
 function adjustGridSize(gridSize=32) {
     // Remove all child elements
     while (grid.firstChild) {
@@ -97,8 +99,8 @@ function adjustGridSize(gridSize=32) {
 
     // Event listeners for each interactive square (or Grid Chunk)
 
-    const chunkElements = document.querySelectorAll(".gridChunk");
-    const chunkArray = [...chunkElements];
+    chunkElements = document.querySelectorAll(".gridChunk");
+    chunkArray = [...chunkElements];
 
     // For items [2, 3, 4, 5]
     chunkArray.forEach(chunk => {
